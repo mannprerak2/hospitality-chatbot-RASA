@@ -1,28 +1,40 @@
-intents:
-- greet
-- goodbye
-- thanks
-- deny
-- joke
-- name
-
-
 entities:
-- name
-
+- event_name
+- time
+- relative_time
+- day
+- place
+- food_item
+- category
 
 slots:
   name:
     type: text
 
+intents:
+- greet
+- goodbye
+- thanks
+- affirm
+- intro
+- event-request
+- event-time
+- event-location
+- food-request
+- food-location
+- washroom_location
+- location
+- list-categories
+- list
 
 actions:
 - utter_name
 - utter_thanks
 - utter_greet
 - utter_goodbye
-- action_joke
-
+- utter_time
+- utter_location
+- utter_event
 
 templates:
   utter_name:
@@ -36,4 +48,13 @@ templates:
   
   utter_thanks:
   - text: "My pleasure."
+
+  utter_time:
+  - text: "Timings are 0000"
+
+  utter_location:
+  - text: "Location is near abcd"
+
+  utter_event:
+  - text: "Event ABC is at DEF at 0000"
   
