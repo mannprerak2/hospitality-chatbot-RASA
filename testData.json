@@ -2,17 +2,17 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
-        "text": "who are you?",
+        "text": "who are you",
         "intent": "intro",
         "entities": []
       },
       {
-        "text": "what do you do?",
+        "text": "what do you do",
         "intent": "intro",
         "entities": []
       },
       {
-        "text": "what can you do for me?",
+        "text": "what can you do for me",
         "intent": "intro",
         "entities": []
       },
@@ -22,7 +22,7 @@
         "entities": []
       },
       {
-        "text": "what is this website?",
+        "text": "what is this website",
         "intent": "intro",
         "entities": []
       },
@@ -52,7 +52,7 @@
         "entities": []
       },
       {
-        "text": "what is this?",
+        "text": "what is this",
         "intent": "intro",
         "entities": []
       },
@@ -147,26 +147,8 @@
         "entities": []
       },
       {
-        "text": "What is the event happening now",
-        "intent": "event-request",
-        "entities": [
-          {
-            "start": 28,
-            "end": 31,
-            "value": "now",
-            "entity": "time"
-          },
-          {
-            "start": 12,
-            "end": 17,
-            "value": "event",
-            "entity": "event_details"
-          }
-        ]
-      },
-      {
         "text": "What event is happening at Auditorium 10 AM today",
-        "intent": "event-request",
+        "intent": "event_request",
         "entities": [
           {
             "start": 38,
@@ -189,140 +171,8 @@
         ]
       },
       {
-        "text": "What is the event same time tomorrow",
-        "intent": "event-request",
-        "entities": [
-          {
-            "start": 18,
-            "end": 27,
-            "value": "same time",
-            "entity": "time"
-          },
-          {
-            "start": 28,
-            "end": 36,
-            "value": "tomorrow",
-            "entity": "day"
-          }
-        ]
-      },
-      {
-        "text": "What event is happening at Lecture hall 2 tommorrow 10 PM",
-        "intent": "event-request",
-        "entities": [
-          {
-            "start": 27,
-            "end": 41,
-            "value": "Lecture hall 2",
-            "entity": "place"
-          },
-          {
-            "start": 52,
-            "end": 57,
-            "value": "10 PM",
-            "entity": "time"
-          },
-          {
-            "start": 42,
-            "end": 51,
-            "value": "tomorrow",
-            "entity": "day"
-          }
-        ]
-      },
-      {
-        "text": "What event is happening at OAT 6 AM today",
-        "intent": "event-request",
-        "entities": [
-          {
-            "start": 31,
-            "end": 35,
-            "value": "10 AM",
-            "entity": "time"
-          },
-          {
-            "start": 36,
-            "end": 41,
-            "value": "today",
-            "entity": "day"
-          },
-          {
-            "start": 27,
-            "end": 30,
-            "value": "OAT",
-            "entity": "place"
-          }
-        ]
-      },
-      {
-        "text": "What event is happening at Lecture hall 6:30 PM today",
-        "intent": "event-request",
-        "entities": [
-          {
-            "start": 40,
-            "end": 47,
-            "value": "10 AM",
-            "entity": "time"
-          },
-          {
-            "start": 48,
-            "end": 55,
-            "value": "today",
-            "entity": "day"
-          },
-          {
-            "start": 27,
-            "end": 39,
-            "value": "Lecture hall",
-            "entity": "place"
-          }
-        ]
-      },
-      {
-        "text": "What event is happening at Lecture hall 6 30 PM today",
-        "intent": "event-request",
-        "entities": [
-          {
-            "start": 40,
-            "end": 47,
-            "value": "10 AM",
-            "entity": "time"
-          },
-          {
-            "start": 48,
-            "end": 55,
-            "value": "today",
-            "entity": "day"
-          },
-          {
-            "start": 27,
-            "end": 39,
-            "value": "Lecture hall",
-            "entity": "place"
-          }
-        ]
-      },
-      {
-        "text": "What event is happening at 6 30 PM today",
-        "intent": "event-request",
-        "entities": [
-          {
-            "start": 27,
-            "end": 34,
-            "value": "6 30 PM",
-            "entity": "time"
-          },
-          {
-            "start": 35,
-            "end": 40,
-            "value": "today",
-            "entity": "day"
-          }
-        ]
-      },
-      {
         "text": "What event is happening at 6",
-        "intent": "event-request",
+        "intent": "event_request",
         "entities": [
           {
             "start": 27,
@@ -334,7 +184,7 @@
       },
       {
         "text": "What event is at 12",
-        "intent": "event-request",
+        "intent": "event_request",
         "entities": [
           {
             "start": 17,
@@ -346,7 +196,7 @@
       },
       {
         "text": "list events before 12",
-        "intent": "event-request",
+        "intent": "event_request",
         "entities": [
           {
             "start": 19,
@@ -358,13 +208,13 @@
             "start": 12,
             "end": 18,
             "value": "before",
-            "entity": "relative-time"
+            "entity": "relative_time"
           }
         ]
       },
       {
         "text": "list events after 5",
-        "intent": "event-request",
+        "intent": "event_request",
         "entities": [
           {
             "start": 18,
@@ -376,13 +226,13 @@
             "start": 12,
             "end": 17,
             "value": "before",
-            "entity": "relative-time"
+            "entity": "relative_time"
           }
         ]
       },
       {
         "text": "when is the chatbot event happening",
-        "intent": "event-time",
+        "intent": "event_time",
         "entities": [
           {
             "start": 12,
@@ -394,7 +244,7 @@
       },
       {
         "text": "when is python 101 event happening",
-        "intent": "event-time",
+        "intent": "event_time",
         "entities": [
           {
             "start": 8,
@@ -406,7 +256,7 @@
       },
       {
         "text": "what event is happening 2 tomorrow",
-        "intent": "event-request",
+        "intent": "event_request",
         "entities": [
           {
             "start": 24,
@@ -424,7 +274,7 @@
       },
       {
         "text": "What event is happening at Lecture hall 10 AM today",
-        "intent": "event-request",
+        "intent": "event_request",
         "entities": [
           {
             "start": 40,
@@ -448,7 +298,7 @@
       },
       {
         "text": "What is the event same time tomorrow",
-        "intent": "event-request",
+        "intent": "event_request",
         "entities": [
           {
             "start": 18,
@@ -466,7 +316,7 @@
       },
       {
         "text": "What event is happening at Lecture hall 2 tommorrow 10 PM",
-        "intent": "event-request",
+        "intent": "event_request",
         "entities": [
           {
             "start": 27,
@@ -490,7 +340,7 @@
       },
       {
         "text": "What event is happening at Lecture hall 6 AM today",
-        "intent": "event-request",
+        "intent": "event_request",
         "entities": [
           {
             "start": 40,
@@ -513,56 +363,8 @@
         ]
       },
       {
-        "text": "What event is happening at Lecture hall 6:30 PM today",
-        "intent": "event-request",
-        "entities": [
-          {
-            "start": 40,
-            "end": 47,
-            "value": "6:30 PM",
-            "entity": "time"
-          },
-          {
-            "start": 48,
-            "end": 53,
-            "value": "today",
-            "entity": "day"
-          },
-          {
-            "start": 27,
-            "end": 39,
-            "value": "Lecture hall",
-            "entity": "place"
-          }
-        ]
-      },
-      {
-        "text": "What event is happening at Lecture hall 6 30 PM today",
-        "intent": "event-request",
-        "entities": [
-          {
-            "start": 40,
-            "end": 47,
-            "value": "10 AM",
-            "entity": "time"
-          },
-          {
-            "start": 48,
-            "end": 53,
-            "value": "today",
-            "entity": "day"
-          },
-          {
-            "start": 27,
-            "end": 39,
-            "value": "Lecture hall",
-            "entity": "place"
-          }
-        ]
-      },
-      {
         "text": "What event is happening at 6 30 PM today",
-        "intent": "event-request",
+        "intent": "event_request",
         "entities": [
           {
             "start": 27,
@@ -579,26 +381,8 @@
         ]
       },
       {
-        "text": "What event is happening at 6 30 PM today",
-        "intent": "event-request",
-        "entities": [
-          {
-            "start": 27,
-            "end": 34,
-            "value": "10 30 AM",
-            "entity": "time"
-          },
-          {
-            "start": 35,
-            "end": 40,
-            "value": "today",
-            "entity": "day"
-          }
-        ]
-      },
-      {
         "text": "What event is happening at 6",
-        "intent": "event-request",
+        "intent": "event_request",
         "entities": [
           {
             "start": 27,
@@ -610,7 +394,7 @@
       },
       {
         "text": "What event is at 12",
-        "intent": "event-request",
+        "intent": "event_request",
         "entities": [
           {
             "start": 17,
@@ -622,7 +406,7 @@
       },
       {
         "text": "list events before 12",
-        "intent": "event-request",
+        "intent": "event_request",
         "entities": [
           {
             "start": 19,
@@ -634,13 +418,13 @@
             "start": 12,
             "end": 18,
             "value": "before",
-            "entity": "relative-time"
+            "entity": "relative_time"
           }
         ]
       },
       {
         "text": "list events after 5",
-        "intent": "event-request",
+        "intent": "event_request",
         "entities": [
           {
             "start": 18,
@@ -652,13 +436,13 @@
             "start": 12,
             "end": 17,
             "value": "before",
-            "entity": "relative-time"
+            "entity": "relative_time"
           }
         ]
       },
       {
         "text": "when is the chatbot event happening",
-        "intent": "event-time",
+        "intent": "event_time",
         "entities": [
           {
             "start": 12,
@@ -670,7 +454,7 @@
       },
       {
         "text": "when is python 101 event happening",
-        "intent": "event-time",
+        "intent": "event_time",
         "entities": [
           {
             "start": 8,
@@ -682,7 +466,7 @@
       },
       {
         "text": "what event is happening 2 tomorrow",
-        "intent": "event-request",
+        "intent": "event_request",
         "entities": [
           {
             "start": 24,
@@ -700,7 +484,7 @@
       },
       {
         "text": "when is DJ night",
-        "intent": "event-time",
+        "intent": "event_time",
         "entities": [
           {
             "start": 8,
@@ -712,7 +496,7 @@
       },
       {
         "text": "What are the timings of dance competetion",
-        "intent": "event-time",
+        "intent": "event_time",
         "entities": [
           {
             "start": 24,
@@ -724,7 +508,7 @@
       },
       {
         "text": "Opening ceremony timings",
-        "intent": "event-time",
+        "intent": "event_time",
         "entities": [
           {
             "start": 0,
@@ -736,7 +520,7 @@
       },
       {
         "text": "When is DJ night ",
-        "intent": "event-time",
+        "intent": "event_time",
         "entities": [
           {
             "start": 8,
@@ -747,20 +531,8 @@
         ]
       },
       {
-        "text": "DJ night timings",
-        "intent": "event-time",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "DJ night",
-            "entity": "event_name"
-          }
-        ]
-      },
-      {
-        "text": "When and where is DJ night?",
-        "intent": "event-request",
+        "text": "When and where is DJ night",
+        "intent": "event_request",
         "entities": [
           {
             "start": 18,
@@ -772,7 +544,7 @@
       },
       {
         "text": "where is opening ceremony",
-        "intent": "event-location",
+        "intent": "event_location",
         "entities": [
           {
             "start": 9,
@@ -784,12 +556,468 @@
       },
       {
         "text": "DJ night location",
-        "intent": "event-location",
+        "intent": "event_location",
         "entities": [
           {
             "start": 0,
             "end": 8,
             "value": "DJ night",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "where can i find water",
+        "intent": "food_location",
+        "entities": [
+          {
+            "start": 17,
+            "end": 22,
+            "value": "water",
+            "entity": "food_item"
+          }
+        ]
+      },
+      {
+        "text": "where can i find water",
+        "intent": "food_location",
+        "entities": [
+          {
+            "start": 17,
+            "end": 22,
+            "value": "water",
+            "entity": "food_item"
+          }
+        ]
+      },
+      {
+        "text": "find kurkure",
+        "intent": "food_location",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "kurkure",
+            "entity": "food_item"
+          }
+        ]
+      },
+      {
+        "text": "where can i get burger",
+        "intent": "food_location",
+        "entities": [
+          {
+            "start": 16,
+            "end": 22,
+            "value": "burger",
+            "entity": "food_item"
+          }
+        ]
+      },
+      {
+        "text": "where is the location of nearby drinking water",
+        "intent": "food_location",
+        "entities": [
+          {
+            "start": 32,
+            "end": 46,
+            "value": "drinking water",
+            "entity": "food_item"
+          }
+        ]
+      },
+      {
+        "text": "where can i get burger",
+        "intent": "food_location",
+        "entities": [
+          {
+            "start": 16,
+            "end": 22,
+            "value": "burger",
+            "entity": "food_item"
+          }
+        ]
+      },
+      {
+        "text": "where can i find nearby restroom",
+        "intent": "washroom_location",
+        "entities": []
+      },
+      {
+        "text": "nearby washroom",
+        "intent": "washroom_location",
+        "entities": []
+      },
+      {
+        "text": "where is washroom",
+        "intent": "washroom_location",
+        "entities": []
+      },
+      {
+        "text": "location of toilet",
+        "intent": "washroom_location",
+        "entities": []
+      },
+      {
+        "text": "what is the location of washroom nearby",
+        "intent": "washroom_location",
+        "entities": []
+      },
+      {
+        "text": "where can i find nearby washroom",
+        "intent": "washroom_location",
+        "entities": []
+      },
+      {
+        "text": "where can i find nearby toilet",
+        "intent": "washroom_location",
+        "entities": []
+      },
+      {
+        "text": "where is restroom",
+        "intent": "washroom_location",
+        "entities": []
+      },
+      {
+        "text": "where is toilet",
+        "intent": "washroom_location",
+        "entities": []
+      },
+      {
+        "text": "what is the location of restroom nearby",
+        "intent": "washroom_location",
+        "entities": []
+      },
+      {
+        "text": "what is the location of toilet nearby",
+        "intent": "washroom_location",
+        "entities": []
+      },
+      {
+        "text": "toilet",
+        "intent": "washroom_location",
+        "entities": []
+      },
+      {
+        "text": "washroom",
+        "intent": "washroom_location",
+        "entities": []
+      },
+      {
+        "text": "restroom",
+        "intent": "washroom_location",
+        "entities": []
+      },
+      {
+        "text": "can i find burger nearby",
+        "intent": "food_request",
+        "entities": []
+      },
+      {
+        "text": "is noodles available",
+        "intent": "food_request",
+        "entities": []
+      },
+      {
+        "text": "list all events",
+        "intent": "list",
+        "entities": []
+      },
+      {
+        "text": "details of all events",
+        "intent": "list",
+        "entities": []
+      },
+      {
+        "text": "where is dance show",
+        "intent": "event_location",
+        "entities": [
+          {
+            "start": 9,
+            "end": 19,
+            "value": "dance show",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "location of quitino",
+        "intent": "event_location",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "quitino",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "what is the location of punjabi night",
+        "intent": "event_location",
+        "entities": [
+          {
+            "start": 24,
+            "end": 37,
+            "value": "punjabi night",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "where will singing show occur",
+        "intent": "event_location",
+        "entities": [
+          {
+            "start": 11,
+            "end": 23,
+            "value": "singing show",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "where is the DJ Night",
+        "intent": "event_location",
+        "entities": [
+          {
+            "start": 13,
+            "end": 21,
+            "value": "DJ Night",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "where is this",
+        "intent": "event_location",
+        "entities": [
+          {
+            "start": 9,
+            "end": 13,
+            "value": "this",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "what is the location of event",
+        "intent": "event_location",
+        "entities": [
+          {
+            "start": 24,
+            "end": 29,
+            "value": "event",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "when is anushthaan",
+        "intent": "event_time",
+        "entities": [
+          {
+            "start": 8,
+            "end": 18,
+            "value": "anushthaan",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "anushthaan timings",
+        "intent": "event_time",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "anushthaan",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "when is pendoras box",
+        "intent": "event_time",
+        "entities": [
+          {
+            "start": 8,
+            "end": 20,
+            "value": "pendoras box",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "pendoras box timings",
+        "intent": "event_time",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "pendoras box",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "slam em timings",
+        "intent": "event_time",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "slam em",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "when is slam em",
+        "intent": "event_time",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "slam em",
+            "entity": "event_name"
+          },
+          {
+            "start": 8,
+            "end": 15,
+            "value": "slam em",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "Live Wire timings",
+        "intent": "event_time",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Live Wire",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "when is Live Wire",
+        "intent": "event_time",
+        "entities": [
+          {
+            "start": 8,
+            "end": 17,
+            "value": "Live Wire",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "Punjabi Night timings",
+        "intent": "event_time",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "Punjabi Night",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "when is Punjabi Night",
+        "intent": "event_time",
+        "entities": [
+          {
+            "start": 8,
+            "end": 21,
+            "value": "Punjabi Night",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "where is dance show",
+        "intent": "event_location",
+        "entities": [
+          {
+            "start": 9,
+            "end": 19,
+            "value": "dance show",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "location of quitino",
+        "intent": "event_location",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "quitino",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "what is the location of punjabi night",
+        "intent": "event_location",
+        "entities": [
+          {
+            "start": 24,
+            "end": 37,
+            "value": "punjabi night",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "where will singing show occur",
+        "intent": "event_location",
+        "entities": [
+          {
+            "start": 11,
+            "end": 23,
+            "value": "singing show",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "where is the DJ Night",
+        "intent": "event_location",
+        "entities": [
+          {
+            "start": 13,
+            "end": 21,
+            "value": "DJ Night",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "where is this",
+        "intent": "event_location",
+        "entities": [
+          {
+            "start": 9,
+            "end": 13,
+            "value": "this",
+            "entity": "event_name"
+          }
+        ]
+      },
+      {
+        "text": "what is the location of event",
+        "intent": "event_location",
+        "entities": [
+          {
+            "start": 24,
+            "end": 29,
+            "value": "event",
             "entity": "event_name"
           }
         ]

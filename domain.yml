@@ -10,6 +10,8 @@ entities:
 slots:
   name:
     type: text
+  event_name:
+    type: text
 
 intents:
 - greet
@@ -17,14 +19,12 @@ intents:
 - thanks
 - affirm
 - intro
-- event-request
-- event-time
-- event-location
-- food-request
-- food-location
+- event_request
+- event_time
+- event_location
+- food_request
+- food_location
 - washroom_location
-- location
-- list-categories
 - list
 
 actions:
@@ -33,28 +33,26 @@ actions:
 - utter_greet
 - utter_goodbye
 - utter_time
-- utter_location
-- utter_event
+- utter_intro
+- action_event
+- action_event_time
+- action_event_location
+- action_washroom
+- action_food_location
+- action_event_list
 
 templates:
   utter_name:
   - text: "Hey there! Tell me your name."
 
+  utter_intro:
+  - text: "Hey there! I am a chatbot"
+
   utter_greet:
-  - text: "Nice to you meet you {name}. How can I help?"
+  - text: "Nice to you meet you. How can I help?"
 
   utter_goodbye:
   - text: "Talk to you later!"
   
   utter_thanks:
   - text: "My pleasure."
-
-  utter_time:
-  - text: "Timings are 0000"
-
-  utter_location:
-  - text: "Location is near abcd"
-
-  utter_event:
-  - text: "Event ABC is at DEF at 0000"
-  

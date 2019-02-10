@@ -1,6 +1,6 @@
-## story_greet <!--- The name of the story. It is not mandatory, but useful for debugging. --> 
-* greet <!--- User input expressed as intent. In this case it represents users message 'Hello'. --> 
- - utter_name <!--- The response of the chatbot expressed as an action. In this case it represents chatbot's response 'Hello, how can I help?' --> 
+## story_greet
+* greet
+ - utter_greet  
  
 ## story_goodbye
 * goodbye
@@ -10,51 +10,42 @@
 * thanks
  - utter_thanks
  
+## story_intro
+* thanks
+ - utter_intro
+
 ## story_name
 * name{"name":"Sam"}
  - utter_greet
 
-## story_01
-* greet
- - utter_greet
-* event-request
- - utter_event
-* event_location
- - utter_location
+ ## story_004
+* event_request
+ - action_event
+
+## story_05
 * event_time
- - utter_time
-* goodbye
- - utter_goodbye
+ - action_event_time
 
- ## story_02
-* greet
- - utter_greet
+## story_06
 * event_location
- - utter_location
-* event_time
- - utter_time
-* goodbye
- - utter_goodbye
+ - action_event_location
 
- ## story_03
-* greet
- - utter_greet
-* event-request
- - utter_event
-* event_location
- - utter_location
-* event_time
- - utter_time
+## story_07
+* washroom_location
+ - action_washroom
 
- ## story_01
-* event-request
- - utter_event
+## story_08
+* food_location
+ - action_food_location
 
-## story_01
-* event_time
- - utter_time
+## story_10
+* list
+ - action_event_list
 
- ## story_01
-* event_location
- - utter_location
+
+
+
+
+
+
 

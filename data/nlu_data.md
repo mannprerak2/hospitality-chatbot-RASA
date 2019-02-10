@@ -59,5 +59,3 @@
 - yes yes yes
 - definitely
 
-## intent: ask_details
--

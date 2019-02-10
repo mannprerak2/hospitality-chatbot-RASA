@@ -8,22 +8,31 @@
     "utter_goodbye": {
       "slots": []
     },
-    "utter_name": {
+    "utter_greet": {
       "slots": []
     },
-    "utter_time": {
+    "utter_intro": {
       "slots": []
     },
-    "utter_location": {
+    "action_event_time": {
       "slots": []
     },
-    "utter_event": {
+    "action_event_location": {
+      "slots": []
+    },
+    "action_washroom": {
+      "slots": []
+    },
+    "action_event": {
+      "slots": []
+    },
+    "action_food_location": {
+      "slots": []
+    },
+    "action_event_list": {
       "slots": []
     },
     "utter_thanks": {
-      "slots": []
-    },
-    "utter_greet": {
       "slots": []
     }
   },
@@ -37,7 +46,7 @@
     "rasa_core.policies.keras_policy.KerasPolicy",
     "rasa_core.policies.memoization.MemoizationPolicy"
   ],
-  "trained_at": "20190209-213422",
+  "trained_at": "20190210-055018",
   "rasa_core": "0.13.2",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

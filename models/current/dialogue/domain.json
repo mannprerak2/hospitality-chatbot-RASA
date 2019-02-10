@@ -1,17 +1,15 @@
 {
   "states": [
     "intent_affirm",
-    "intent_event-location",
-    "intent_event-request",
-    "intent_event-time",
-    "intent_food-location",
-    "intent_food-request",
+    "intent_event_location",
+    "intent_event_request",
+    "intent_event_time",
+    "intent_food_location",
+    "intent_food_request",
     "intent_goodbye",
     "intent_greet",
     "intent_intro",
     "intent_list",
-    "intent_list-categories",
-    "intent_location",
     "intent_thanks",
     "intent_washroom_location",
     "entity_event_name",
@@ -21,6 +19,7 @@
     "entity_place",
     "entity_food_item",
     "entity_category",
+    "slot_event_name_0",
     "slot_name_0",
     "prev_action_listen",
     "prev_action_restart",
@@ -34,7 +33,12 @@
     "prev_utter_greet",
     "prev_utter_goodbye",
     "prev_utter_time",
-    "prev_utter_location",
-    "prev_utter_event"
+    "prev_utter_intro",
+    "prev_action_event",
+    "prev_action_event_time",
+    "prev_action_event_location",
+    "prev_action_washroom",
+    "prev_action_food_location",
+    "prev_action_event_list"
   ]
 }

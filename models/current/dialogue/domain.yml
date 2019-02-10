@@ -6,8 +6,13 @@ actions:
 - utter_greet
 - utter_goodbye
 - utter_time
-- utter_location
-- utter_event
+- utter_intro
+- action_event
+- action_event_time
+- action_event_location
+- action_washroom
+- action_food_location
+- action_event_list
 config:
   store_entities_as_slots: true
 entities:
@@ -30,41 +35,37 @@ intents:
     use_entities: true
 - intro:
     use_entities: true
-- event-request:
+- event_request:
     use_entities: true
-- event-time:
+- event_time:
     use_entities: true
-- event-location:
+- event_location:
     use_entities: true
-- food-request:
+- food_request:
     use_entities: true
-- food-location:
+- food_location:
     use_entities: true
 - washroom_location:
-    use_entities: true
-- location:
-    use_entities: true
-- list-categories:
     use_entities: true
 - list:
     use_entities: true
 slots:
+  event_name:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   name:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
 templates:
-  utter_event:
-  - text: Event ABC is at DEF at 0000
   utter_goodbye:
   - text: Talk to you later!
   utter_greet:
-  - text: Nice to you meet you {name}. How can I help?
-  utter_location:
-  - text: Location is near abcd
+  - text: Nice to you meet you. How can I help?
+  utter_intro:
+  - text: Hey there! I am a chatbot
   utter_name:
   - text: Hey there! Tell me your name.
   utter_thanks:
   - text: My pleasure.
-  utter_time:
-  - text: Timings are 0000
